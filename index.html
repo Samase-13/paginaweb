@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Compra los mejores productos en nuestra tienda online con precios exclusivos y calidad garantizada.">
+    <title>ASTRO - Tienda Online</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <!-- Navegación -->
+    <header>
+        <div class="navbar">
+            <div class="container">
+                <a href="#" class="logo">ASTRO</a>
+                <nav>
+                    <ul class="nav-links">
+                        <li><a href="#inicio">Inicio</a></li>
+                        <li><a href="#productos">Productos</a></li>
+                        <li><a href="#nosotros">Nosotros</a></li>
+                        <li><a href="#contacto">Contacto</a></li>
+                        <li><a href="#" id="cart-icon"><i class="fas fa-shopping-cart"></i><span id="cart-count">0</span></a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero -->
+    <section id="hero">
+        <div class="container hero-content">
+            <h1>Bienvenidos</h1>
+            <p>Encuentra los productos más exclusivos y de calidad</p>
+            <a href="#productos" class="btn-hero">Comprar Ahora</a>
+        </div>
+    </section>
+
+    <!-- Productos -->
+    <section id="productos" class="productos">
+        <div class="container">
+            <h2 class="section-title">Nuestros Productos</h2>
+            <div class="product-grid">
+                <!-- Los productos se cargarán dinámicamente aquí -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Carrito -->
+<div id="carrito-panel" class="carrito-oculto">
+    <div class="carrito-header">
+        <h2>Tu Carrito</h2>
+        <span id="cerrar-carrito">&times;</span>
+    </div>
+    <div id="carrito-items">
+        <!-- Los productos añadidos aparecerán aquí -->
+    </div>
+    <div class="carrito-footer">
+        <p>Total: <span id="carrito-total">S/0.00</span></p>
+        <button id="checkout">Pagar</button>
+    </div>
+</div>
+
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2024 ASTRO - Todos los derechos reservados</p>
+        <ul class="social-links">
+            <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+            <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+            <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+        </ul>
+    </footer>
+
+    <!-- Scripts -->
+    <script type="module" src="script.js"></script>
+</body>
+</html>
